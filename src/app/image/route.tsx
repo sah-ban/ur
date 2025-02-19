@@ -4,11 +4,6 @@ export async function GET(req: Request) {
   const url = new URL(req.url);
   const text = url.searchParams.get("t");
 
-  const tokenBannerImage="https://raw.githubusercontent.com/cashlessman/images/refs/heads/main/base-season.png";
-  const tokenImage="https://raw.githubusercontent.com/cashlessman/images/refs/heads/main/pfp.png";
-  const tokenChainsImage="https://raw.githubusercontent.com/base-org/brand-kit/refs/heads/main/logo/symbol/Base_Symbol_Blue.png";
-  const dexImage="https://raw.githubusercontent.com/cashlessman/images/refs/heads/main/dex-screener-logo.png";
-  
 
 
   return new ImageResponse(
